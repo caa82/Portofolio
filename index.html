@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elsa Insani — Portofolio Profesional &amp; Dokumen Project</title>
+  <meta name="description"
+    content="Portofolio profesional Elsa Insani: Mahasiswa Manajemen Informatika Politeknik Astra, Software Developer, System Analyst, dan Sekretaris Organisasi." />
+
+  <!-- Script Pencegah Flash of Unstyled Theme (FOUC) -->
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', savedTheme || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ============ AMBIENT BACKGROUND BLOBS ============ -->
+  <div class="ambient-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <a href="#main" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- ============ SITE HEADER & NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <button type="button" class="brand" id="brand-profile-trigger" aria-haspopup="dialog" aria-expanded="false"
+        aria-label="Lihat Informasi Singkat Elsa Insani" title="Klik profil untuk melihat informasi ringkas">
+        <div class="brand-avatar-wrapper">
+          <img src="img/Profile.jpg" alt="Foto Elsa Insani" class="brand-avatar" />
+          <span class="avatar-status-dot" title="Tersedia &amp; Aktif"></span>
+        </div>
+        <span>elsa insani<span class="brand-dot">.</span></span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Navigasi Utama">
+        <a href="#projects" class="nav-link active">Project</a>
+        <a href="#education" class="nav-link">Pendidikan &amp; Prestasi</a>
+        <a href="#organization" class="nav-link">Organisasi</a>
+        <a href="#activities" class="nav-link">Aktivitas</a>
+        <a href="#multirole" class="nav-link">Peran &amp; Galeri</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Ganti mode terang dan gelap"
+          title="Ganti mode tampilan">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linejoin="round" />
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <button id="mobile-menu-toggle" class="icon-btn mobile-menu-btn" type="button" aria-label="Buka navigasi menu"
+          aria-expanded="false" title="Menu Navigasi">
+          <svg class="icon icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="icon icon-close-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" style="display:none;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="mobile-nav-panel" id="mobile-nav" hidden>
+      <div class="container mobile-nav-inner">
+        <a href="#projects" class="mobile-nav-link">
+          <span class="m-nav-icon">📁</span>
+          <span>Project Terpilih</span>
+        </a>
+        <a href="#education" class="mobile-nav-link">
+          <span class="m-nav-icon">🎓</span>
+          <span>Pendidikan &amp; Prestasi</span>
+        </a>
+        <a href="#organization" class="mobile-nav-link">
+          <span class="m-nav-icon">🏛️</span>
+          <span>Organisasi &amp; Peran</span>
+        </a>
+        <a href="#activities" class="mobile-nav-link">
+          <span class="m-nav-icon">📅</span>
+          <span>Aktivitas &amp; Event</span>
+        </a>
+        <a href="#multirole" class="mobile-nav-link">
+          <span class="m-nav-icon">📸</span>
+          <span>Peran &amp; Galeri</span>
+        </a>
+        <a href="#contact" class="mobile-nav-link">
+          <span class="m-nav-icon">📬</span>
+          <span>Kontak Langsung</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero reveal" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <!-- Foto Profil Potret (Tampil di Kanan pada Desktop, di Atas pada Layar HP) -->
+        <div class="hero-portrait reveal reveal-delay-3">
+          <div class="hero-portrait-wrapper">
+            <div class="hero-frame-bg" aria-hidden="true"></div>
+
+            <div class="floating-badge float-top" aria-hidden="true">
+              <span style="color: var(--accent-indigo);">⚡</span>
+              <span>1.5+ Thn Dev Exp</span>
+            </div>
+
+            <div class="hero-portrait-card">
+              <img src="img/Profile.jpg" alt="Potret Elsa Insani" />
+              <div class="hero-portrait-meta">
+                <span>ELSA INSANI</span>
+                <span style="color: var(--accent-indigo);">ASTRAtech '24</span>
+              </div>
+            </div>
+
+            <div class="floating-badge float-bottom" aria-hidden="true">
+              <span style="color: var(--accent-teal);">🎓</span>
+              <span>GPA 3.77 · Cum Laude</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Konten Utama: Headline, Bio & CTA di Tengah -->
+        <div class="hero-body reveal reveal-delay-1">
+          <span class="badge badge-indigo" style="margin-bottom: 10px;">✨ Manajemen Informatika · Fullstack &amp; System
+            Analyst</span>
+          <h1 id="hero-title">
+            Menerjemahkan kebutuhan bisnis menjadi <span class="gradient-text">sistem fungsional, andal, dan
+              solutif.</span>
+          </h1>
+          <p class="hero-lead">
+            Mahasiswa Manajemen Informatika dengan ±1,5 tahun pengalaman membangun aplikasi end-to-end menggunakan .NET,
+            Laravel, React, dan Spring Boot. Berpengalaman dalam analisis sistem, pengembangan API, dan perancangan
+            database relasional, didukung kepemimpinan organisasi, ketelitian administratif, dan problem solving yang
+            teruji.
+          </p>
+
+          <div class="hero-highlights">
+            <span class="badge badge-indigo">⚡ System Analysis</span>
+            <span class="badge badge-teal">💻 Fullstack (.NET, Laravel, React)</span>
+            <span class="badge badge-amber">🗄️ Database &amp; API Design</span>
+            <span class="badge badge-rose">📋 Sekretaris MPM &amp; SHE Agent</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary magnetic-btn">
+              <span>Eksplorasi Project</span>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost magnetic-btn">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <!-- Informasi IPK, Status & Statistik (Tampil di Kiri pada Desktop, di Bawah pada Layar HP) -->
+        <div class="hero-meta label reveal reveal-delay-2">
+          <span class="status-indicator">
+            <span class="status-dot"></span>
+            Terbuka untuk Kolaborasi
+          </span>
+          <div
+            style="border-top: 1px solid var(--border); padding-top: 10px; display: flex; flex-direction: column; gap: 6px;">
+            <span>📍 Bekasi, Jawa Barat</span>
+            <span>🏛️ Politeknik Astra</span>
+            <span>🎓 IPK: <strong style="color: var(--accent-indigo);">3.77 / 4.00</strong></span>
+          </div>
+          <div
+            style="border-top: 1px solid var(--border); padding-top: 10px; display: flex; gap: 6px; flex-wrap: wrap;">
+            <span class="badge badge-indigo" style="font-size: 10.5px; padding: 3px 8px;">8+ Project</span>
+            <span class="badge badge-teal" style="font-size: 10.5px; padding: 3px 8px;">20+ Event</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 01: FEATURED PROJECTS ============ -->
+    <section class="section reveal" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="label" style="color: var(--accent-indigo);">01 — Proyek Unggulan</span>
+            <h2 id="projects-title">Daftar Project &amp; Spesifikasi Teknis</h2>
+          </div>
+          <p class="section-desc">
+            Aplikasi enterprise skala industri, migrasi modul SIA, mobile apps, desktop POS, hingga alat bantu internal.
+            Dilengkapi analisis masalah, solusi arsitektur, dan link dokumen/video demo.
+          </p>
+        </div>
+
+        <div class="toolbar">
+          <div class="filters" id="filters" role="group" aria-label="Filter kategori project"></div>
+          <div class="search">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8" />
+              <path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+            <input id="search-input" type="search" placeholder="Cari judul, teknologi, atau peran…"
+              aria-label="Pencarian project" autocomplete="off" />
+          </div>
+        </div>
+
+        <p class="result-count label" id="result-count" aria-live="polite"></p>
+
+        <!-- Dynamic Project Grid Container with 3D Tilt & Spotlight -->
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" hidden>
+          <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          </svg>
+          <h3>Tidak Ada Project yang Cocok</h3>
+          <p>Coba gunakan kata kunci pencarian yang berbeda atau reset filter kategori.</p>
+          <button type="button" class="btn btn-ghost" id="reset-filters">Reset Semua Filter</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 02: PENDIDIKAN, PRESTASI & SERTIFIKASI ============ -->
+    <section class="section reveal" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="label" style="color: var(--accent-teal);">02 — Rekam Jejak Akademis &amp; Profesional</span>
+            <h2 id="edu-title">Pendidikan, Prestasi &amp; Sertifikasi</h2>
+          </div>
+          <p class="section-desc">
+            Landasan akademis unggul di Politeknik Astra, pencapaian kompetisi tingkat nasional, dan sertifikasi
+            keahlian berstandar industri yang terstruktur rapi.
+          </p>
+        </div>
+
+        <!-- ROW 1: PENDIDIKAN FORMAL & HIGHLIGHT IPK -->
+        <div class="edu-row-block reveal reveal-delay-1">
+          <div class="row-header">
+            <span class="row-badge badge-indigo">02.1</span>
+            <h3 class="row-title">Pendidikan Formal &amp; Capaian Akademik</h3>
+          </div>
+
+          <div class="edu-formal-grid">
+            <!-- Institution 1: Astra Polytechnic -->
+            <div class="edu-inst-card edu-inst-featured">
+              <div class="inst-top">
+                <div class="inst-icon-badge">🎓</div>
+                <div class="inst-meta">
+                  <span class="inst-dates">Agustus 2024 — Sekarang · Semester 4</span>
+                  <h4 class="inst-name">Astra Polytechnic (Politeknik Astra / ASTRAtech)</h4>
+                  <div class="inst-degree">Associate's Degree (D3) — Manajemen Informatika</div>
+                </div>
+              </div>
+              <p class="inst-desc">
+                Fokus mendalam pada rekayasa perangkat lunak modern, arsitektur sistem informasi enterprise, perancangan
+                database relasional &amp; normalisasi, pengembangan RESTful API, virtualisasi, dan siklus SDLC Agile.
+              </p>
+              <div class="inst-tags">
+                <span class="badge badge-teal">IPK Berjalan: 3.77 / 4.00</span>
+                <span class="badge badge-indigo">Predikat: Sangat Memuaskan / Cum Laude</span>
+                <span class="badge badge-amber">Penerima Beasiswa Astra International</span>
+              </div>
+            </div>
+
+            <!-- Institution 2: MAN 1 Bekasi -->
+            <div class="edu-inst-card">
+              <div class="inst-top">
+                <div class="inst-icon-badge inst-icon-teal">🏛️</div>
+                <div class="inst-meta">
+                  <span class="inst-dates">Juli 2021 — Mei 2024 · Lulus</span>
+                  <h4 class="inst-name">MAN 1 Bekasi</h4>
+                  <div class="inst-degree">Jurusan Natural Science (MIPA)</div>
+                </div>
+              </div>
+              <p class="inst-desc">
+                Menempati <strong>Peringkat 1 Eligible</strong> dalam satu angkatan dengan nilai rapor tertinggi
+                akumulatif dari Kelas 10 hingga 12 (<strong>93.7 / 100</strong>). Mengembangkan kepemimpinan melalui
+                Sekretaris MPK, Rohis, English Club, Tahfidz Club, dan Master of Ceremony (MC).
+              </p>
+              <div class="inst-tags">
+                <span class="badge badge-teal">🥇 Peringkat 1 Eligible (1 Angkatan)</span>
+                <span class="badge badge-indigo">Nilai Rapor: 93.7 / 100</span>
+                <span class="badge badge-rose">Sekretaris MPK &amp; MC Resmi</span>
+              </div>
+            </div>
+
+            <!-- Academic Distinction / GPA Meter Card -->
+            <div class="gpa-highlight-card">
+              <div class="gpa-card-inner">
+                <div class="gpa-left">
+                  <span class="label" style="color: var(--accent-indigo);">Indeks Prestasi Kumulatif</span>
+                  <div class="gpa-val">
+                    <span class="counter" data-target="3.77" data-decimals="2">0.00</span>
+                    <small>/ 4.00</small>
+                  </div>
+                  <span class="badge badge-teal" style="width: fit-content; margin-top: 4px;">★ Konsisten Unggul</span>
+                  <p class="gpa-note">Konsistensi nilai teoritikal &amp; praktikum rekayasa perangkat lunak di
+                    Politeknik Astra.</p>
+                </div>
+                <div class="circular-progress" aria-hidden="true">
+                  <svg viewBox="0 0 80 80">
+                    <circle class="circle-bg" cx="40" cy="40" r="36"></circle>
+                    <circle class="circle-val" id="gpa-circle" cx="40" cy="40" r="36"></circle>
+                  </svg>
+                  <span class="circle-label">94%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2: PENCAPAIAN & PENGHARGAAN -->
+        <div class="edu-row-block reveal reveal-delay-2">
+          <div class="row-header">
+            <span class="row-badge badge-teal">02.2</span>
+            <h3 class="row-title">Pencapaian &amp; Penghargaan Kompetisi</h3>
+          </div>
+
+          <div class="achievements-row-grid">
+            <div class="achievement-card-premium">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-wrap" style="color: var(--accent-indigo);">
+                  <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                    <path d="M4 22h16"></path>
+                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                  </svg>
+                </div>
+                <span class="achieve-year-pill">2026</span>
+              </div>
+              <h5 class="achieve-title">10 Besar Point Soft Skill Tertinggi Tingkat 2</h5>
+              <div class="achieve-organizer">Diselenggarakan oleh Politeknik Astra</div>
+              <span class="badge badge-indigo" style="margin-top: 12px; font-size: 11px;">Soft Skill &amp;
+                Leadership</span>
+            </div>
+
+            <div class="achievement-card-premium">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-wrap" style="color: var(--accent-teal);">
+                  <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <span class="achieve-year-pill"
+                  style="color: var(--accent-teal); border-color: var(--accent-teal-border); background: var(--accent-teal-bg);">2025</span>
+              </div>
+              <h5 class="achieve-title">10 Besar Point Soft Skill Tertinggi Tingkat 1</h5>
+              <div class="achieve-organizer">Diselenggarakan oleh Politeknik Astra</div>
+              <span class="badge badge-teal" style="margin-top: 12px; font-size: 11px;">Keaktifan &amp; Dedikasi</span>
+            </div>
+
+            <div class="achievement-card-premium">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-wrap" style="color: var(--accent-amber);">
+                  <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <span class="achieve-year-pill"
+                  style="color: var(--accent-amber); border-color: var(--accent-amber-border); background: var(--accent-amber-bg);">2023</span>
+              </div>
+              <h5 class="achieve-title">Semi Final — Kompetisi Kimia Tingkat Nasional</h5>
+              <div class="achieve-organizer">Kemendikbudristek &amp; Universitas Negeri Yogyakarta (UNY)</div>
+              <span class="badge badge-amber" style="margin-top: 12px; font-size: 11px;">Tingkat Nasional</span>
+            </div>
+
+            <div class="achievement-card-premium">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-wrap" style="color: var(--accent-rose);">
+                  <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                </div>
+                <span class="achieve-year-pill"
+                  style="color: var(--accent-rose); border-color: var(--accent-rose-border); background: var(--accent-rose-bg);">2023</span>
+              </div>
+              <h5 class="achieve-title">Ziyadah 1 Juz Saung Qur’an MAN 1 Bekasi</h5>
+              <div class="achieve-organizer">Diselenggarakan oleh MAN 1 Bekasi</div>
+              <span class="badge badge-rose" style="margin-top: 12px; font-size: 11px;">Tahfidz &amp; Karakter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 3: SERTIFIKASI PROFESIONAL -->
+        <div class="edu-row-block reveal reveal-delay-3">
+          <div class="row-header">
+            <span class="row-badge badge-amber">02.3</span>
+            <h3 class="row-title">Sertifikasi Profesional (2025)</h3>
+          </div>
+
+          <div class="cert-row-grid">
+            <div class="cert-card-premium">
+              <div class="cert-badge-top">
+                <span class="cert-vendor-pill vendor-ms">Microsoft</span>
+                <span class="cert-verified-tag">✓ Terverifikasi</span>
+              </div>
+              <h4 class="cert-name">Microsoft Certified: Azure Data Fundamentals</h4>
+              <p class="cert-meta">Penerbit: Microsoft Corporation · Diterbitkan: 2025</p>
+              <p class="cert-summary">
+                Validasi pemahaman komprehensif mengenai konsep data inti, pengelolaan data relasional dan
+                non-relasional di cloud Azure, serta beban kerja analitik modern.
+              </p>
+              <div class="cert-skills">
+                <span>Azure Cloud</span>
+                <span>Relational Data</span>
+                <span>NoSQL</span>
+                <span>Data Analytics</span>
+              </div>
+            </div>
+
+            <div class="cert-card-premium">
+              <div class="cert-badge-top">
+                <span class="cert-vendor-pill vendor-mikrotik">MikroTik</span>
+                <span class="cert-verified-tag">✓ Terverifikasi</span>
+              </div>
+              <h4 class="cert-name">MikroTik Certified Network Associate (MTCNA)</h4>
+              <p class="cert-meta">Penerbit: MikroTik SIA · Diterbitkan: 2025</p>
+              <p class="cert-summary">
+                Kualifikasi internasional dalam konfigurasi RouterOS, manajemen bandwidth, routing dasar, firewall
+                security filter, NAT, DHCP server, dan wireless networking.
+              </p>
+              <div class="cert-skills">
+                <span>RouterOS</span>
+                <span>TCP/IP &amp; Subnetting</span>
+                <span>Firewall &amp; NAT</span>
+                <span>Bandwidth QoS</span>
+              </div>
+            </div>
+
+            <div class="cert-card-premium">
+              <div class="cert-badge-top">
+                <span class="cert-vendor-pill vendor-idnet">ID Networkers</span>
+                <span class="cert-verified-tag">✓ Terverifikasi</span>
+              </div>
+              <h4 class="cert-name">Course "Pemrograman Dart Dasar"</h4>
+              <p class="cert-meta">Penerbit: ID-Networkers (PT Integrasi Data Nusantara) · Diterbitkan: 2025</p>
+              <p class="cert-summary">
+                Kompetensi sintaksis bahasa Dart, paradigma Object-Oriented Programming (OOP), asynchronous programming
+                (Future, async/await), dan stream untuk persiapan Flutter app.
+              </p>
+              <div class="cert-skills">
+                <span>Dart Language</span>
+                <span>OOP</span>
+                <span>Async / Await</span>
+                <span>Flutter Readiness</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 4: BIDANG MINAT & SPESIALISASI -->
+        <div class="edu-row-block reveal reveal-delay-4">
+          <div class="row-header">
+            <span class="row-badge badge-rose">02.4</span>
+            <h3 class="row-title">Bidang Minat &amp; Spesialisasi Karir</h3>
+          </div>
+
+          <div class="interests-cards-grid">
+            <div class="interest-item-card">
+              <div class="interest-card-icon" style="color: var(--accent-indigo); background: var(--accent-indigo-bg);">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                </svg>
+              </div>
+              <h5>System Analysis</h5>
+              <p>Analisis kebutuhan fungsional, pembuatan BPMN, SRS, flowchart, ERD, dan use case diagram.</p>
+            </div>
+
+            <div class="interest-item-card">
+              <div class="interest-card-icon" style="color: var(--accent-teal); background: var(--accent-teal-bg);">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h5>Software Engineering</h5>
+              <p>Pengembangan aplikasi Full-stack (.NET C#, PHP Laravel, Java Spring Boot, React, Flutter).</p>
+            </div>
+
+            <div class="interest-item-card">
+              <div class="interest-card-icon" style="color: var(--accent-amber); background: var(--accent-amber-bg);">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </div>
+              <h5>QA &amp; System Testing</h5>
+              <p>Pengujian fungsional sistem, skenario test case, black-box testing, dan bug reporting terstruktur.</p>
+            </div>
+
+            <div class="interest-item-card">
+              <div class="interest-card-icon" style="color: var(--accent-rose); background: var(--accent-rose-bg);">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h5>Human Resources &amp; People Dev</h5>
+              <p>Manajemen koordinasi talenta, kepemimpinan tim organisasi, dan pengelolaan program kerja.</p>
+            </div>
+
+            <div class="interest-item-card">
+              <div class="interest-card-icon" style="color: var(--accent-indigo); background: var(--accent-indigo-bg);">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+              </div>
+              <h5>Administrative Management</h5>
+              <p>Ketelitian persuratan, notulensi rapat resmi MPM, pengarsipan dokumen, dan SOP administrasi.</p>
+            </div>
+
+            <div class="interest-item-card">
+              <div class="interest-card-icon" style="color: var(--accent-teal); background: var(--accent-teal-bg);">
+                <svg class="icon icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </div>
+              <h5>Marketing &amp; Public Relations</h5>
+              <p>Komunikasi publik, Master of Ceremony (MC) formal/non-formal, dan relasi mitra eksternal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 03: PENGALAMAN ORGANISASI ============ -->
+    <section class="section reveal" id="organization" aria-labelledby="org-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="label" style="color: var(--accent-amber);">03 — Kepemimpinan</span>
+            <h2 id="org-title">Pengalaman Organisasi &amp; Tata Kelola</h2>
+          </div>
+          <p class="section-desc">
+            Pengalaman nyata dalam memimpin tata kelola organisasi kampus, digitalisasi proses kerja MPM &amp; SHE
+            Agent, serta pengarsipan administratif formal.
+          </p>
+        </div>
+
+        <div class="org-grid">
+          <!-- Org 1: MPM Politeknik Astra -->
+          <div class="org-card reveal reveal-delay-1">
+            <div class="org-header">
+              <div>
+                <h3>Majelis Permusyawaratan Mahasiswa (MPM)</h3>
+                <span class="org-role">Sekretaris</span>
+              </div>
+              <span class="badge badge-indigo">Januari 2025 - Sekarang</span>
+            </div>
+            <ul class="org-bullets">
+              <li>Mengolah seluruh arsip persuratan dan administrasi organisasi MPM Politeknik Astra.</li>
+              <li>Mendigitalisasikan seluruh proses kehadiran, dashboard pengawasan, AP-IK, hingga alur penyampaian
+                aspirasi.</li>
+              <li>Menjembatani komunikasi segala program kerja legislatif yang berjalan dengan pihak Institusi
+                Politeknik Astra.</li>
+              <li>Memastikan program kerja berjalan sesuai Activity Plan dan terealisasi sesuai Indikator Kinerja (IK).
+              </li>
+              <li>Monitoring program kerja seluruh komisi, rekap absensi bulanan, dan menyusun One Sheet Proposal (OSP).
+              </li>
+            </ul>
+          </div>
+
+          <!-- Org 2: SHE Agent Politeknik Astra -->
+          <div class="org-card reveal reveal-delay-2">
+            <div class="org-header">
+              <div>
+                <h3>SHE Agent Politeknik Astra (Safety Agent)</h3>
+                <span class="org-role" style="color: var(--accent-teal);">Education Team &amp; Sekretaris</span>
+              </div>
+              <span class="badge badge-teal">Maret 2025 - Sekarang</span>
+            </div>
+            <ul class="org-bullets">
+              <li><strong>Education Team (2026 - Sekarang):</strong> Memberikan safety announcement setiap Senin pagi,
+                menjadi trainer safety dojo untuk mahasiswa dan karyawan, serta pendataan training.</li>
+              <li><strong>Sekretaris (2025 - 2026):</strong> Mengolah persuratan, notula rapat rutin, mencatat temuan
+                masalah pada setiap kegiatan GENBA, dan rekapitulasi absensi bulanan.</li>
+              <li>Meningkatkan kesadaran budaya K3 (Keselamatan dan Kesehatan Kerja) di lingkungan kampus.</li>
+            </ul>
+          </div>
+
+          <!-- Org 3: Astra Gema Islami (AGI) -->
+          <div class="org-card reveal reveal-delay-1">
+            <div class="org-header">
+              <div>
+                <h3>Astra Gema Islami (AGI)</h3>
+                <span class="org-role" style="color: var(--accent-amber);">Staff Jelajah Amaliah</span>
+              </div>
+              <span class="badge badge-amber">Januari 2026 - Sekarang</span>
+            </div>
+            <ul class="org-bullets">
+              <li>Mengolah data peserta yang mengikuti kegiatan Jelajah Amaliah selama acara Silaturahmi Astra berjalan.
+              </li>
+              <li>Mengatur jalannya perlombaan khususnya pada sesi kreasi daur ulang kain.</li>
+              <li>Melakukan kalkulasi penilaian dan rekapitulasi terhadap setiap peserta lomba.</li>
+            </ul>
+          </div>
+
+          <!-- Org 4: MPK MAN 1 Bekasi -->
+          <div class="org-card reveal reveal-delay-2">
+            <div class="org-header">
+              <div>
+                <h3>Majelis Permusyawaratan Kelas (MPK) MAN 1 Bekasi</h3>
+                <span class="org-role" style="color: var(--accent-rose);">Sekretaris</span>
+              </div>
+              <span class="badge badge-rose">Januari 2023 - Januari 2024</span>
+            </div>
+            <ul class="org-bullets">
+              <li>Mengelola seluruh administrasi arsip dan lalu lintas surat resmi masuk/keluar di dalam MPK.</li>
+              <li>Menyusun notula di setiap rapat rutin dan sidang paripurna perwakilan kelas.</li>
+              <li>Menyusun proposal kegiatan untuk setiap program kerja legislatif siswa.</li>
+            </ul>
+          </div>
+
+          <!-- Org 5: ROHIS MAN 1 Bekasi -->
+          <div class="org-card reveal reveal-delay-1">
+            <div class="org-header">
+              <div>
+                <h3>Organisasi Rohani Islam (ROHIS) MAN 1 Bekasi</h3>
+                <span class="org-role" style="color: var(--accent-indigo);">Kepala Divisi PHBI</span>
+              </div>
+              <span class="badge badge-indigo">Februari 2023 - Februari 2024</span>
+            </div>
+            <ul class="org-bullets">
+              <li>Membentuk dan mengkoordinasikan panitia hari besar Islam (Idul Adha, Isra Mi’raj, Gema Ramadhan,
+                Halalbihalal).</li>
+              <li>Mengkoordinir alur rundown acara dan memastikan seluruh kegiatan berjalan tepat waktu.</li>
+              <li>Menjadi jembatan komunikasi dan perizinan acara dengan pihak madrasah.</li>
+            </ul>
+          </div>
+
+          <!-- Org 6: Tahfidz Club MAN 1 Bekasi -->
+          <div class="org-card reveal reveal-delay-2">
+            <div class="org-header">
+              <div>
+                <h3>Tahfidz Club MAN 1 Bekasi</h3>
+                <span class="org-role" style="color: var(--accent-teal);">Pengajar &amp; Pembimbing Murojaah</span>
+              </div>
+              <span class="badge badge-teal">Februari 2023 - Februari 2024</span>
+            </div>
+            <ul class="org-bullets">
+              <li>Menyusun agenda pertemuan halaqah rutin untuk setiap siswa dalam sepekan.</li>
+              <li>Menerima setoran hafalan Al-Qur'an siswa dan mencatat perkembangannya di buku tahfidz.</li>
+              <li>Menyampaikan laporan progres hafalan rutin bulanan kepada dewan pembina.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 04: AKTIVITAS & KEPANITIAAN (INTERACTIVE TABS) ============ -->
+    <section class="section reveal" id="activities" aria-labelledby="act-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="label" style="color: var(--accent-rose);">04 — Kontribusi Nyata</span>
+            <h2 id="act-title">Aktivitas &amp; Kepanitiaan (<span class="counter" data-target="20">0</span>+ Event)</h2>
+          </div>
+          <p class="section-desc">
+            Rekam jejak kontribusi aktif dalam perhelatan kampus, seminar industri Astra, serta kegiatan kesiswaan. Klik
+            tab tahun di bawah untuk memfilter acara.
+          </p>
+        </div>
+
+        <!-- Interactive Year Tabs Toolbar -->
+        <div class="act-toolbar">
+          <div class="year-tabs" id="year-tabs" role="tablist" aria-label="Filter tahun event">
+            <button type="button" class="tab-btn is-active" data-year="all" role="tab" aria-selected="true">Semua (26
+              Event)</button>
+            <button type="button" class="tab-btn" data-year="2026" role="tab" aria-selected="false">2026 (7
+              Event)</button>
+            <button type="button" class="tab-btn" data-year="2025" role="tab" aria-selected="false">2025 (14
+              Event)</button>
+            <button type="button" class="tab-btn" data-year="2024" role="tab" aria-selected="false">2024–2022 (5
+              Event)</button>
+          </div>
+          <span class="label" id="event-filter-count">Menampilkan semua 26 event</span>
+        </div>
+
+        <!-- Dynamic Event Cards Grid -->
+        <div class="events-cards-grid" id="events-container">
+          <!-- 2026 -->
+          <div class="event-item" data-year="2026">
+            <span class="event-role-badge role-sekretaris">Sekretaris</span>
+            <span class="event-name">Sidang Pleno MPM ASTRAtech</span>
+            <span class="event-meta">Politeknik Astra · 2026</span>
+          </div>
+          <div class="event-item" data-year="2026">
+            <span class="event-role-badge role-mc">Master of Ceremony</span>
+            <span class="event-name">Lomba Tahfidz Qur'an Amaliah Astra</span>
+            <span class="event-meta">Yayasan Amaliah Astra · 2026</span>
+          </div>
+          <div class="event-item" data-year="2026">
+            <span class="event-role-badge role-fasilitator">Fasilitator</span>
+            <span class="event-name">HR Gathering by ASTRAtech</span>
+            <span class="event-meta">Politeknik Astra · 2026</span>
+          </div>
+          <div class="event-item" data-year="2026">
+            <span class="event-role-badge role-lo">Liaison Officer (LO)</span>
+            <span class="event-name">Career Day ASTRAtech 2026</span>
+            <span class="event-meta">Politeknik Astra · 2026</span>
+          </div>
+          <div class="event-item" data-year="2026">
+            <span class="event-role-badge role-acara">Panitia AGI</span>
+            <span class="event-name">Silaturahmi Astra 2026</span>
+            <span class="event-meta">Astra Gema Islami · 2026</span>
+          </div>
+          <div class="event-item" data-year="2026">
+            <span class="event-role-badge role-fasilitator">Staff Amaliah</span>
+            <span class="event-name">Jelajah Amaliah Silaturahmi Astra</span>
+            <span class="event-meta">Amaliah Astra · 2026</span>
+          </div>
+          <div class="event-item" data-year="2026">
+            <span class="event-role-badge role-acara">Divisi Acara</span>
+            <span class="event-name">Pengenalan Kehidupan Kampus (PKKMB)</span>
+            <span class="event-meta">Politeknik Astra · 2026</span>
+          </div>
+
+          <!-- 2025 -->
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-sekretaris">Sekretaris</span>
+            <span class="event-name">Study Banding MPM x Polman x STHB</span>
+            <span class="event-meta">Bandung · Oktober 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-sekretaris">Sekretaris</span>
+            <span class="event-name">Malam Keakraban Manajemen Informatika</span>
+            <span class="event-meta">ASTRAtech · Desember 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-mc">Master of Ceremony</span>
+            <span class="event-name">Parent’s Day Politeknik Astra</span>
+            <span class="event-meta">ASTRAtech · Oktober 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-fasilitator">Fasilitator</span>
+            <span class="event-name">Gathering with HR Astra by ASTRAtech</span>
+            <span class="event-meta">Juli 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-ketua">Ketua Pelaksana</span>
+            <span class="event-name">Gema Ramadhan MAN 1 Bekasi</span>
+            <span class="event-meta">Juli 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-sekretaris">Sekretaris</span>
+            <span class="event-name">FunDay with MPM ASTRAtech</span>
+            <span class="event-meta">Januari 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-sekretaris">Sekretaris</span>
+            <span class="event-name">Gema Ramadhan (GARASI) MI</span>
+            <span class="event-meta">Maret 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-koordinator">Koordinator Acara</span>
+            <span class="event-name">Lomba Identitas Manajemen Informatika</span>
+            <span class="event-meta">ASTRAtech · 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-acara">Divisi Acara</span>
+            <span class="event-name">ASTRAtech Aspiration Day (AAD) MPM</span>
+            <span class="event-meta">2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-acara">Divisi Acara</span>
+            <span class="event-name">Sekolah Legislatif MPM ASTRAtech</span>
+            <span class="event-meta">2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-acara">Divisi Acara</span>
+            <span class="event-name">Buka Bersama Karyawan ASTRAtech</span>
+            <span class="event-meta">2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-lo">Team Registration</span>
+            <span class="event-name">PASS SERIES #13 ASTRAtech</span>
+            <span class="event-meta">2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-mc">Divisi Kesehatan</span>
+            <span class="event-name">Upacara 17 Agustus Kampus ASTRAtech</span>
+            <span class="event-meta">Agustus 2025</span>
+          </div>
+          <div class="event-item" data-year="2025">
+            <span class="event-role-badge role-acara">Divisi Acara</span>
+            <span class="event-name">Career Day Politeknik Astra 2025</span>
+            <span class="event-meta">2025</span>
+          </div>
+
+          <!-- 2024 - 2022 -->
+          <div class="event-item" data-year="2024">
+            <span class="event-role-badge role-acara">Divisi Acara</span>
+            <span class="event-name">ASTRAtech Expretion Day (ASTERO)</span>
+            <span class="event-meta">2024</span>
+          </div>
+          <div class="event-item" data-year="2024">
+            <span class="event-role-badge role-sekretaris">Sekretaris</span>
+            <span class="event-name">Musyawarah Besar MPK MAN 1 Bekasi</span>
+            <span class="event-meta">November 2023</span>
+          </div>
+          <div class="event-item" data-year="2024">
+            <span class="event-role-badge role-sekretaris">Sekretaris</span>
+            <span class="event-name">Open Recruitment MPK MAN 1 Bekasi</span>
+            <span class="event-meta">April 2023</span>
+          </div>
+          <div class="event-item" data-year="2024">
+            <span class="event-role-badge role-koordinator">Koordinator Acara</span>
+            <span class="event-name">Peringatan Isra Mi'raj MAN 1 Bekasi</span>
+            <span class="event-meta">2023</span>
+          </div>
+          <div class="event-item" data-year="2024">
+            <span class="event-role-badge role-acara">Divisi Acara</span>
+            <span class="event-name">Wisuda Tahfidz &amp; Maulid Nabi SAW</span>
+            <span class="event-meta">MAN 1 Bekasi · 2022</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 05: MULTIDISIPLIN & GALERI MASONRY ============ -->
+    <section class="section reveal" id="multirole" aria-labelledby="multi-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="label" style="color: var(--accent-teal);">05 — Multidisiplin</span>
+            <h2 id="multi-title">Peran Lain &amp; Galeri Dokumentasi</h2>
+          </div>
+          <p class="section-desc">
+            Keseimbangan kemampuan analitis teknis dan kecerdasan interpersonal: Public Speaking, Safety Management,
+            Administrasi, serta Fotografi.
+          </p>
+        </div>
+
+        <div class="multirole-grid">
+          <!-- Role 1 -->
+          <div class="role-card reveal reveal-delay-1">
+            <div class="role-media">
+              <img src="img/MC_Career Day.jpg" alt="Elsa sebagai Master of Ceremony" loading="lazy" />
+            </div>
+            <div class="role-body">
+              <span class="label" style="color: var(--accent-rose);">Public Speaking</span>
+              <h4>Presenter &amp; MC</h4>
+              <p>Memandu acara formal maupun semi-formal kampus dengan pembawaan artikulatif, interaktif, dan penuh
+                percaya diri.</p>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="role-card reveal reveal-delay-2">
+            <div class="role-media">
+              <img src="img/Pengembangan.png" alt="Human Development & Training" loading="lazy" />
+            </div>
+            <div class="role-body">
+              <span class="label" style="color: var(--accent-teal);">People &amp; Culture</span>
+              <h4>Human Dev &amp; Trainer</h4>
+              <p>Aktif dalam fasilitasi training safety dojo, pembinaan karakter mahasiswa, dan edukasi budaya K3 di
+                lingkungan Astra.</p>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="role-card reveal reveal-delay-3">
+            <div class="role-media">
+              <img src="img/Sekretaris.png" alt="Kesekretariatan & Administrasi" loading="lazy" />
+            </div>
+            <div class="role-body">
+              <span class="label" style="color: var(--accent-indigo);">Governance</span>
+              <h4>Administrasi &amp; Arsip</h4>
+              <p>Penyusunan AD/ART, notulasi rapat pleno, standardisasi penomoran surat, serta perancangan dashboard
+                monitoring.</p>
+            </div>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="role-card reveal reveal-delay-4">
+            <div class="role-media">
+              <img src="img/Fotographer.jpg" alt="Dokumentasi Visual & Fotografi" loading="lazy" />
+            </div>
+            <div class="role-body">
+              <span class="label" style="color: var(--accent-amber);">Visual Arts</span>
+              <h4>Fotografi &amp; Media</h4>
+              <p>Mendokumentasikan momen penting pada kegiatan institusi dengan komposisi estetis, tata cahaya, dan
+                sudut pandang menarik.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modern Masonry Gallery Grid (12 Slot Penuh Tanpa Bolong) -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-4);">
+          <h3 class="label" style="color: var(--text);">Galeri Kegiatan Nyata (Klik Foto untuk Zoom)</h3>
+          <span class="badge badge-indigo" id="gallery-count-badge">📸 8 Dokumentasi Foto</span>
+        </div>
+
+        <div class="gallery-masonry" id="gallery-masonry">
+          <!-- Baris 1: 2 + 1 + 1 = 4 Kolom -->
+          <div class="gallery-card gallery-card-wide" data-gallery-img="img/GARASI.JPG"
+            data-gallery-title="Gema Ramadhan (GARASI) MI 2025" data-gallery-role="Sekretaris Acara">
+            <img src="img/GARASI.JPG" alt="Gema Ramadhan GARASI MI" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">Sekretaris Acara</span>
+              <span class="gallery-title">Gema Ramadhan (GARASI) MI 2025</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-gallery-img="img/Sidang Pleno.JPG"
+            data-gallery-title="Sidang Pleno MPM Politeknik Astra" data-gallery-role="Sekretaris MPM">
+            <img src="img/Sidang Pleno.JPG" alt="Sidang Pleno MPM" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">Sekretaris MPM</span>
+              <span class="gallery-title">Sidang Pleno Politeknik Astra</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-gallery-img="img/Study Banding.jpg"
+            data-gallery-title="Study Banding MPM x Polman x STHB" data-gallery-role="Sekretaris Delegasi">
+            <img src="img/Study Banding.jpg" alt="Study Banding MPM" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">Sekretaris Delegasi</span>
+              <span class="gallery-title">Study Banding Polman &amp; STHB</span>
+            </div>
+          </div>
+
+          <!-- Baris 2: 1 + 2 + 1 = 4 Kolom -->
+          <div class="gallery-card" data-gallery-img="img/Safety_Astra.jpg"
+            data-gallery-title="Training K3 SHE Agent ke Astra" data-gallery-role="SHE Agent Trainer">
+            <img src="img/Safety_Astra.jpg" alt="Safety Agent Astra" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">SHE Agent Trainer</span>
+              <span class="gallery-title">Training K3 Lingkungan Astra</span>
+            </div>
+          </div>
+
+          <div class="gallery-card gallery-card-wide" data-gallery-img="img/Malam Keakraban.jpg"
+            data-gallery-title="Malam Keakraban Manajemen Informatika 2025" data-gallery-role="Sekretaris Pelaksana">
+            <img src="img/Malam Keakraban.jpg" alt="Malam Keakraban MI" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">Sekretaris Pelaksana</span>
+              <span class="gallery-title">Malam Keakraban MI 2025</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-gallery-img="img/MC_Parents.jpg"
+            data-gallery-title="Parent's Day Politeknik Astra" data-gallery-role="Master of Ceremony">
+            <img src="img/MC_Parents.jpg" alt="MC Parent's Day" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">Master of Ceremony</span>
+              <span class="gallery-title">Parent's Day ASTRAtech</span>
+            </div>
+          </div>
+
+          <!-- Baris 3: 2 + 2 = 4 Kolom (Rapi Penuh!) -->
+          <div class="gallery-card gallery-card-wide" data-gallery-img="img/LO.jpg"
+            data-gallery-title="Career Day Politeknik Astra" data-gallery-role="Liaison Officer (LO)">
+            <img src="img/LO.jpg" alt="Liaison Officer Career Day" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">Liaison Officer</span>
+              <span class="gallery-title">Career Day Politeknik Astra</span>
+            </div>
+          </div>
+
+          <div class="gallery-card gallery-card-wide" data-gallery-img="img/art.png"
+            data-gallery-title="Creative Art — Desain Mercusuar" data-gallery-role="Desain Grafis">
+            <img src="img/art.png" alt="Karya Seni Visual Mercusuar" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-role">Desain Grafis</span>
+              <span class="gallery-title">Karya Seni Visual Mercusuar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 06: INFORMASI KONTAK & JARINGAN PROFESIONAL ============ -->
+    <section class="section reveal" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="label" style="color: var(--accent-indigo);">06 — Informasi Kontak Langsung</span>
+            <h2 id="contact-title">Mari Terhubung &amp; Berkolaborasi</h2>
+          </div>
+          <p class="section-desc">
+            Terbuka untuk peluang kerja magang/full-time, proyek rekayasa sistem, software engineering, maupun
+            kolaborasi kepanitiaan. Silakan hubungi langsung melalui saluran di bawah ini.
+          </p>
+        </div>
+
+        <div class="direct-contact-grid reveal reveal-delay-1">
+          <!-- WhatsApp Card (Featured) -->
+          <div class="direct-contact-card contact-card-wa">
+            <div class="contact-card-top">
+              <div class="contact-icon-bubble bubble-wa" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.35.06-.53.26-.18.2-.7.69-.7 1.67 0 .98.72 1.93.82 2.07.1.13 1.39 2.19 3.41 3.03.48.2.86.33 1.15.42.48.16.92.13 1.27.08.39-.06 1.21-.5 1.38-.98.17-.48.17-.89.12-.98-.05-.09-.19-.15-.4-.25s-1.21-.6-1.4-.67c-.19-.07-.33-.1-.47.1-.14.21-.54.67-.66.81-.12.14-.24.16-.45.05-.21-.1-.89-.33-1.69-1.05-.62-.56-1.04-1.25-1.16-1.46-.12-.21-.01-.32.09-.43.09-.1.21-.25.32-.38.1-.12.14-.21.21-.35.07-.14.03-.27-.02-.37-.05-.1-.47-1.13-.64-1.55-.17-.41-.34-.35-.47-.36h-.4Z" />
+                </svg>
+              </div>
+              <span class="contact-status-pill">🟢 Online · Respon Cepat</span>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-label">WhatsApp Langsung</span>
+              <h4 class="contact-value">+62 813-8917-5366</h4>
+              <p class="contact-hint">Komunikasi tercepat untuk diskusi kebutuhan proyek, jadwal wawancara kerja, atau
+                penawaran kerja sama.</p>
+            </div>
+            <div class="contact-card-actions">
+              <a href="https://wa.me/6281389175366" target="_blank" rel="noopener" class="btn btn-primary btn-wa">
+                <span>Chat WhatsApp</span>
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <button type="button" class="btn btn-ghost copy-btn" data-copy="+6281389175366"
+                aria-label="Salin nomor WhatsApp">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Salin</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Gmail / Email Pribadi Card -->
+          <div class="direct-contact-card contact-card-gmail">
+            <div class="contact-card-top">
+              <div class="contact-icon-bubble bubble-gmail" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+              </div>
+              <span class="badge badge-indigo">Email Utama</span>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-label">Email Pribadi / Bisnis</span>
+              <h4 class="contact-value">elsainsani120407@gmail.com</h4>
+              <p class="contact-hint">Kirimkan penawaran pekerjaan, dokumen resmi (NDA, TOR, kontrak kerja), atau
+                undangan interview resmi.</p>
+            </div>
+            <div class="contact-card-actions">
+              <a href="mailto:elsainsani120407@gmail.com" class="btn btn-primary">
+                <span>Kirim Email</span>
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <button type="button" class="btn btn-ghost copy-btn" data-copy="elsainsani120407@gmail.com"
+                aria-label="Salin email utama">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Salin</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="direct-contact-card contact-card-linkedin">
+            <div class="contact-card-top">
+              <div class="contact-icon-bubble bubble-linkedin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.77v8.37H6.46v-8.37M7.85 6.46a1.61 1.61 0 1 0 0 3.22 1.61 1.61 0 0 0 0-3.22Z" />
+                </svg>
+              </div>
+              <span class="badge badge-teal">Koneksi Profesional</span>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-label">LinkedIn Profile</span>
+              <h4 class="contact-value">Elsa Insani</h4>
+              <p class="contact-hint">linkedin.com/in/Elsa-Insani · Tinjau riwayat organisasi kampus, validasi keahlian,
+                dan rekomendasi rekan.</p>
+            </div>
+            <div class="contact-card-actions">
+              <a href="https://linkedin.com/in/Elsa-Insani" target="_blank" rel="noopener"
+                class="btn btn-primary btn-linkedin">
+                <span>Profil LinkedIn ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Instagram Card -->
+          <div class="direct-contact-card contact-card-instagram">
+            <div class="contact-card-top">
+              <div class="contact-icon-bubble bubble-instagram" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </div>
+              <span class="badge badge-rose">Dokumentasi &amp; MC</span>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-label">Instagram Resmi</span>
+              <h4 class="contact-value">@elsaa_nsan</h4>
+              <p class="contact-hint">Dokumentasi kepanitiaan kampus, public speaking, aktivitas Master of Ceremony
+                (MC), dan personal branding.</p>
+            </div>
+            <div class="contact-card-actions">
+              <a href="https://instagram.com/elsaa_nsan" target="_blank" rel="noopener" class="btn btn-ghost btn-ig">
+                <span>Lihat Instagram ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Lokasi / Domisili Card -->
+          <div class="direct-contact-card contact-card-location">
+            <div class="contact-card-top">
+              <div class="contact-icon-bubble bubble-location" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <span class="badge badge-amber">Domisili Aktif</span>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-label">Lokasi Saat Ini</span>
+              <h4 class="contact-value">Bekasi, Cikarang Barat</h4>
+              <p class="contact-hint">Jawa Barat, Indonesia. Bersedia untuk penempatan <strong>On-site (Bekasi,
+                  Cikarang, Karawang, Jakarta)</strong> maupun <strong>Remote / Hybrid</strong>.</p>
+            </div>
+            <div class="contact-card-actions">
+              <span class="badge badge-teal" style="padding: 8px 14px; font-size: 12px;">📍 Terbuka On-site &amp;
+                Remote</span>
+            </div>
+          </div>
+
+          <!-- Email Kampus Politeknik Astra Card -->
+          <div class="direct-contact-card contact-card-campus">
+            <div class="contact-card-top">
+              <div class="contact-icon-bubble bubble-campus" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <span class="badge badge-teal">Akademik Resmi</span>
+            </div>
+            <div class="contact-card-content">
+              <span class="contact-label">Email Kampus (Politeknik Astra)</span>
+              <h4 class="contact-value" style="font-size: 14.5px; word-break: break-all;">
+                0320240024@polytechnic.astra.ac.id</h4>
+              <p class="contact-hint">Korespondensi formal civitas akademika, administrasi magang terpadu, dan kerjasama
+                institusional.</p>
+            </div>
+            <div class="contact-card-actions">
+              <a href="mailto:0320240024@polytechnic.astra.ac.id" class="btn btn-ghost">
+                <span>Kirim Email</span>
+              </a>
+              <button type="button" class="btn btn-ghost copy-btn" data-copy="0320240024@polytechnic.astra.ac.id"
+                aria-label="Salin email kampus">
+                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Salin</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="label">© <span id="year"></span> Elsa Insani · Politeknik Astra. Dibuat dengan HTML5, CSS3, Vanilla
+        JS &amp; Supabase.</span>
+      <div class="footer-links label">
+        <a href="#projects">Project</a>
+        <a href="#education">Pendidikan</a>
+        <a href="#organization">Organisasi</a>
+        <a href="#top">Kembali ke Atas ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT DETAIL DRAWER / MODAL ============ -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true"
+    tabindex="-1">
+    <div class="drawer-bar">
+      <span class="label" id="drawer-category"></span>
+      <button type="button" class="icon-btn" id="drawer-close" aria-label="Tutup detail project">
+        <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="drawer-content" id="drawer-content"></div>
+  </aside>
+
+  <!-- ============ INTERACTIVE LIGHTBOX MODAL ============ -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <button type="button" class="lightbox-btn-close" id="lightbox-close" aria-label="Tutup galeri foto">✕</button>
+    <button type="button" class="lightbox-nav-btn lightbox-prev" id="lightbox-prev"
+      aria-label="Foto sebelumnya">❮</button>
+    <button type="button" class="lightbox-nav-btn lightbox-next" id="lightbox-next"
+      aria-label="Foto selanjutnya">❯</button>
+
+    <div class="lightbox-dialog">
+      <div class="lightbox-img-wrapper">
+        <img id="lightbox-img" src="" alt="Dokumentasi Kegiatan" />
+      </div>
+      <div class="lightbox-caption">
+        <div>
+          <div class="lightbox-title" id="lightbox-title"></div>
+          <div class="lightbox-meta" id="lightbox-role"></div>
+        </div>
+        <span class="label" id="lightbox-counter">1 / 8</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PROFILE QUICK INFO POPUP MODAL (POINT-ONLY) ============ -->
+  <div class="profile-modal-backdrop" id="profile-modal" hidden role="dialog" aria-modal="true"
+    aria-labelledby="profile-modal-title">
+    <div class="profile-modal-card">
+      <!-- Header Profil Singkat -->
+      <div class="profile-modal-header">
+        <div class="profile-modal-bio-top">
+          <div class="profile-modal-avatar-box">
+            <img src="img/Profile.jpg" alt="Foto Elsa Insani" class="profile-modal-avatar" />
+            <span class="profile-modal-status-ping" title="Aktif &amp; Terbuka untuk Kolaborasi"></span>
+          </div>
+          <div class="profile-modal-titles">
+            <div class="profile-modal-badge-row">
+              <span class="badge badge-indigo">Quick Profile</span>
+              <span class="badge badge-teal">🟢 Available 2026</span>
+            </div>
+            <h3 id="profile-modal-title" class="profile-modal-name">Elsa Insani</h3>
+            <p class="profile-modal-role">System Analyst &amp; Fullstack Developer</p>
+          </div>
+        </div>
+        <button type="button" class="profile-modal-close" id="profile-modal-close" aria-label="Tutup popup profil">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Body: Hanya Berupa Poin-Poin Singkat (Tanpa Deskripsi Paragraf Panjang) -->
+      <div class="profile-modal-body">
+        <!-- 1. Pendidikan & Status Akademik -->
+        <div class="profile-point-group">
+          <h4 class="profile-group-title">
+            <span class="point-icon">🎓</span> Pendidikan &amp; Status Akademik
+          </h4>
+          <ul class="profile-bullet-list">
+            <li><strong>Institusi:</strong> Politeknik Astra (ASTRAtech), Cikarang Barat, Bekasi</li>
+            <li><strong>Program Studi:</strong> D3 Manajemen Informatika (Associate Degree)</li>
+            <li><strong>Status Saat Ini:</strong> Mahasiswa Aktif Semester 4 (Agustus 2024 — Sekarang)</li>
+            <li><strong>Capaian IPK:</strong> <span class="highlight-text">3.77 / 4.00</span> (Predikat Sangat Memuaskan
+              / Cum Laude)</li>
+            <li><strong>Penghargaan:</strong> Penerima Beasiswa Prestasi Astra International</li>
+            <li><strong>Pendidikan Sebelumnya:</strong> MAN 1 Bekasi — MIPA (Peringkat 1 Eligible, Nilai Rapor 93.7/100)
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2. Keahlian & Spesialisasi Teknis -->
+        <div class="profile-point-group">
+          <h4 class="profile-group-title">
+            <span class="point-icon">⚡</span> Keahlian &amp; Spesialisasi Teknis
+          </h4>
+          <ul class="profile-bullet-list">
+            <li><strong>System Analysis:</strong> Pemodelan SRS/FSD, BPMN Proses Bisnis, Use Case, Draw.io, DFD</li>
+            <li><strong>Backend Enterprise:</strong> Java Spring Boot, RESTful API, Oracle SQL Developer, Supabase
+              (PostgreSQL)</li>
+            <li><strong>Frontend &amp; Mobile:</strong> React Native, Modern Vanilla JavaScript (ES6+), HTML5 Semantik,
+              Modern CSS3</li>
+            <li><strong>Tools &amp; Workflow:</strong> Git/GitHub, NetBeans IDE, VS Code, Figma UI/UX</li>
+            <li><strong>Kompetensi Tambahan:</strong> Master of Ceremony (MC Formal Kampus), Public Speaking, Notulensi
+              Terstruktur</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TOAST NOTIFICATION CONTAINER ============ -->
+  <div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
+
+  <!-- Supabase JS Client v2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
